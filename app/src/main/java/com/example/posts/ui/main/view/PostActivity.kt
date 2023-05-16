@@ -49,7 +49,7 @@ class PostActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         postAdapter = PostAdapter(arrayListOf())
         postAdapter.clickListener = { i: Int, post: PostModel ->
-            post.isFav = !post.isFav
+            post.isFav = true
             postAdapter?.notifyItemChanged(i)
         }
         recyclerView.adapter = postAdapter
