@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="com.example.posts.com.nagarro.posts.MyApplication"
+        android:name="com.nagarro.posts.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,10 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyPost">
 
-        <activity android:name="com.example.posts.com.nagarro.posts.ui.main.view.PostActivity">
+        <activity android:name="com.nagarro.posts.ui.main.view.PostActivity">
 
         </activity>
-        <activity android:name="com.example.posts.com.nagarro.posts.ui.main.view.LoginActivity">
+        <activity android:name="com.nagarro.posts.ui.main.view.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

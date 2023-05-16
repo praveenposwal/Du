@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">MyPost</string>
-    <string name="my_photos">MyPhotos</string>
     <string name="email_field_hint">Enter your email</string>
     <string name="password_field_hint">Enter your password</string>
     <string name="email_field_empty">Email can\'t be empty</string>
