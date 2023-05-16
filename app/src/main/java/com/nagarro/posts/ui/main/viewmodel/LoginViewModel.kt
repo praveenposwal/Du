@@ -1,10 +1,10 @@
-package com.example.posts.ui.main.viewmodel
+package com.nagarro.posts.ui.main.viewmodel
 
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.posts.util.Status
-import com.example.posts.util.Validator
+import com.nagarro.posts.util.Status
+import com.nagarro.posts.util.Validator
 
 class LoginViewModel @ViewModelInject constructor(): ViewModel()  {
 

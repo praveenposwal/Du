@@ -1,4 +1,4 @@
-package com.example.posts.util
+package com.nagarro.posts.util
 
 import com.example.posts.R
 import java.util.regex.Pattern
@@ -39,7 +39,7 @@ object Validator {
         }
 }
 
-data class Validation(val field: Field, val resource: Resource<Int,String>) {
+data class Validation(val field: Field, val resource: Resource<Int, String>) {
 
     enum class Field {
         EMAIL,

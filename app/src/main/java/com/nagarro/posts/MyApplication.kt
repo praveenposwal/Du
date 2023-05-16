@@ -1,4 +1,4 @@
-package com.example.posts
+package com.nagarro.posts
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

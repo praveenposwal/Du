@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.view.PostActivity">
+    tools:context="com.nagarro.posts.ui.main.view.PostActivity">
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"

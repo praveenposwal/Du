@@ -1,4 +1,4 @@
-package com.example.posts.ui.main.view
+package com.nagarro.posts.ui.main.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,10 +8,10 @@ import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.posts.R
-import com.example.posts.data.model.PostModel
-import com.example.posts.ui.main.adapter.PostAdapter
-import com.example.posts.ui.main.viewmodel.PostViewModel
-import com.example.posts.util.Status
+import com.nagarro.posts.data.model.PostModel
+import com.nagarro.posts.ui.main.adapter.PostAdapter
+import com.nagarro.posts.ui.main.viewmodel.PostViewModel
+import com.nagarro.posts.util.Status
 import com.google.android.material.tabs.TabLayout
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_post.*
@@ -56,11 +56,11 @@ class PostActivity : AppCompatActivity() {
     }
 
     private fun setupObserver() {
-        postViewModel.albums.observe(this, Observer {
+        postViewModel.posts.observe(this, Observer {
             when (it.status) {
                 Status.SUCCESS -> {
                     progressBar.visibility = View.GONE
-                    it.data?.let { albums -> render(albums) }
+                    it.data?.let { posts -> render(posts) }
                     recyclerView.visibility = View.VISIBLE
                 }
                 Status.LOADING -> {

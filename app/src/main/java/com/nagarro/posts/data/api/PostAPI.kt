@@ -1,6 +1,6 @@
-package com.example.posts.data.api
+package com.nagarro.posts.data.api
 
-import com.example.posts.data.model.PostModel
+import com.nagarro.posts.data.model.PostModel
 import retrofit2.Response
 import retrofit2.http.GET
 

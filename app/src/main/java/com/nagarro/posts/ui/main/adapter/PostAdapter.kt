@@ -1,11 +1,11 @@
-package com.example.posts.ui.main.adapter
+package com.nagarro.posts.ui.main.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.posts.R
-import com.example.posts.data.model.PostModel
+import com.nagarro.posts.data.model.PostModel
 import kotlinx.android.synthetic.main.item_layout.view.*
 
 class PostAdapter(

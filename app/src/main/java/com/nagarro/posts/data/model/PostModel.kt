@@ -1,4 +1,4 @@
-package com.example.posts.data.model
+package com.nagarro.posts.data.model
 
 import com.squareup.moshi.Json
 

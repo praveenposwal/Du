@@ -1,8 +1,8 @@
-package com.example.posts.di.module
+package com.nagarro.posts.di.module
 
 import com.example.posts.BuildConfig
-import com.example.posts.data.api.PostAPI
-import com.example.posts.util.BASE_URL
+import com.nagarro.posts.data.api.PostAPI
+import com.nagarro.posts.util.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

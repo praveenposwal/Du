@@ -1,4 +1,4 @@
-package com.example.posts.util
+package com.nagarro.posts.util
 
 enum class Status {
     SUCCESS,
