@@ -6,8 +6,10 @@
     <string name="email_field_empty">Email can\'t be empty</string>
     <string name="password_field_empty">Password can\'t be empty</string>
     <string name="email_field_invalid">Not a valid email</string>
-    <string name="password_field_small_length">Password less than 6 digits</string>
+    <string name="password_field_small_length">Password length not valid</string>
     <string name="login_button_text">Login</string>
     <string name="favorite">FAVORITE</string>
     <string name="all">ALL</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
 </resources>

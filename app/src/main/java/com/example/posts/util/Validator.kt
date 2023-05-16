@@ -15,7 +15,9 @@ object Validator {
                 ")+"
     )
 
-    private const val MIN_PASSWORD_LENGTH = 6
+    private const val MIN_PASSWORD_LENGTH = 8
+
+    private const val MAX_PASSWORD_LENGTH = 15
 
     fun validateLoginFields(email: String?, password: String?): List<Validation> =
         ArrayList<Validation>().apply {
@@ -30,7 +32,7 @@ object Validator {
             when {
                 password.isNullOrBlank() ->
                     add(Validation(Validation.Field.PASSWORD, Resource.error(R.string.password_field_empty)))
-                password.length < MIN_PASSWORD_LENGTH ->
+                password.length < MIN_PASSWORD_LENGTH || password.length > MAX_PASSWORD_LENGTH ->
                     add(Validation(Validation.Field.PASSWORD, Resource.error(R.string.password_field_small_length)))
                 else -> add(Validation(Validation.Field.PASSWORD, Resource.success()))
             }

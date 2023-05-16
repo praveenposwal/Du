@@ -16,7 +16,7 @@ class PostViewModel @ViewModelInject constructor(
 ) : ViewModel() {
 
     private val exceptionHandler = CoroutineExceptionHandler { _, _ ->
-        _albums.postValue(Resource.error("Something Went Wrong", null))
+        _albums.postValue(Resource.error("Something Went Wrong"))
     }
 
     private val _albums = MutableLiveData<Resource<String,List<PostModel>>>()
@@ -31,22 +31,16 @@ class PostViewModel @ViewModelInject constructor(
     private fun getAlbums() {
 
         viewModelScope.launch(exceptionHandler) {
-            _albums.postValue(Resource.loading(null))
-            print("TAG"+Thread.currentThread().name)
+            _albums.postValue(Resource.loading())
             postRepository.getAlbum().let {
                 if (it.isSuccessful) {
-                    print("TAG"+Thread.currentThread().name)
                     _albums.postValue(Resource.success(it.body()))
                 } else {
-                    print("TAG"+Thread.currentThread().name)
-                    _albums.postValue(Resource.error(it.errorBody().toString(), null))
+                    _albums.postValue(Resource.error(it.errorBody().toString()))
                 }
             }
         }
 
     }
-
-
-
 
 }
