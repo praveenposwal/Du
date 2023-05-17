@@ -1,4 +1,4 @@
-# This project created using **MVVM**, **HILT**, **COROUTINES**, **LIVE DATA**
+# This project is created using **MVVM**, **HILT**, **COROUTINES**, **LIVE DATA**
 
 Screen-1 :- <br>
 Its a dummy login screen with email and password validation. <br>
@@ -10,4 +10,5 @@ This screen shows all posts in one tab and favourite ones in another, if user cl
 2. Clean architecture.
 3. UI design improvements.
 4. UI and unit test cases.
+5. C/CD pipe line.
 
